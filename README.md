@@ -35,19 +35,19 @@ Supported browsers: Chrome, Firefox, Safari, Opera, Edge, IE 11
 
 ## Installation
 
-`$ npm i react-h5-audio-player`
+`$ npm i @wzhonggo/react-h5-audio-player`
 
 Or
 
-`$ yarn add react-h5-audio-player`
+`$ yarn add @wzhonggo/react-h5-audio-player`
 
 ## Usage
 
 ```jsx
-import AudioPlayer from 'react-h5-audio-player';
-import 'react-h5-audio-player/lib/styles.css';
-// import 'react-h5-audio-player/lib/styles.less' Use LESS
-// import 'react-h5-audio-player/src/styles.scss' Use SASS
+import AudioPlayer from '@wzhonggo/react-h5-audio-player';
+import '@wzhonggo/react-h5-audio-player/lib/styles.css';
+// import '@wzhonggo/react-h5-audio-player/lib/styles.less' Use LESS
+// import '@wzhonggo/react-h5-audio-player/src/styles.scss' Use SASS
 
 const Player = () => (
   <AudioPlayer
