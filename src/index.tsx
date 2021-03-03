@@ -200,11 +200,12 @@ class H5AudioPlayer extends Component<PlayerProps> {
   playAudioPromise = (): void => {
     this.audio.current
       .play()
-      .then(null)
-      .catch((err) => {
-        const { onPlayError } = this.props
-        onPlayError && onPlayError(new Error(err))
-      })
+      // ie not support return a Promise , see https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play
+      // .then(null)
+      // .catch((err) => {
+      //   const { onPlayError } = this.props
+      //   onPlayError && onPlayError(new Error(err))
+      // })
   }
 
   isPlaying = (): boolean => {
